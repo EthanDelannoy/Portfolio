@@ -89,7 +89,7 @@ document.querySelector('#imgprojet1').addEventListener('click', function() {
     modal.innerHTML = `
         <h1>Mon portfolio</h1>
         <span>Vous y étes actuellement !</span>
-        <p>J'ai codé mon portfolio entierement en HTML-CSS et JavaScript.<br>Entièrement Responsive, mon portfolio est fait en flexbox. <br> Comme vous pouvez le constatez, vous pouvez y retrouver toutes les informations nécessaire à mon sujet et tout ce que j'ai pus réaliser !</p>
+        <p>J'ai codé mon portfolio entièrement en HTML-CSS et JavaScript.<br>Entièrement Responsive, mon portfolio est fait en flexbox. <br> Comme vous pouvez le constatez, vous pouvez y retrouver toutes les informations nécessaire à mon sujet et tout ce que j'ai pus réaliser !</p>
         <button class="closeBtn">Fermer</button>
     `;
 
@@ -113,7 +113,7 @@ document.querySelector('#imgprojet2').addEventListener('click', function() {
     modal.innerHTML = `
         <h1>JULITH</h1>
         <span>Un jeux tour par tour</span>
-        <p>J'ai crée un jeux tour par tour entiérment en JavaScript dans l'univers de DOFUS.<br> Les joueurs ont le choix entre plusieurs classes, ils peuvent mettre leur pseudo et que le combat commence !<br>En combat chaque classe à des caractéristique différente, ils peuvent ce soigner et attaquer mais à tour de role !<br> Une fois qu'un personnage tombe à 0 points de vie, le combat s'arrête et le gagnant est designé victorieux. </p>
+        <p>J'ai crée un jeux tour par tour entièrment en JavaScript dans l'univers de DOFUS.<br> Les joueurs ont le choix entre plusieurs classes, ils peuvent mettre leur pseudo et que le combat commence !<br>En combat chaque classe à des caractéristique différente, ils peuvent ce soigner et attaquer mais à tour de rôle !<br> Une fois qu'un personnage tombe à 0 points de vie, le combat s'arrête et le gagnant est designé victorieux. </p>
         <button class="closeBtn">Fermer</button>
     `;
 
