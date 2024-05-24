@@ -79,6 +79,19 @@ imgProjet2.addEventListener('mouseleave', () => {
     textphoto2.style.display = 'none'
 });
 
+const imgProjet3 = document.getElementById('imgprojet3');
+const textphoto3 =document.getElementById('textphoto3')
+
+imgProjet3.addEventListener('mouseenter', () => {
+    imgProjet3.style.opacity = 0.2;
+    textphoto3.style.display = 'block'; 
+});
+
+imgProjet3.addEventListener('mouseleave', () => {
+    imgProjet3.style.opacity = 1;
+    textphoto3.style.display = 'none'
+});
+
 // --------------------------------------------------------MODAL IMAGE PROJET 1--------------------------------------------------------
 document.querySelector('#imgprojet1').addEventListener('click', function() {
     
@@ -126,5 +139,27 @@ document.querySelector('#imgprojet2').addEventListener('click', function() {
     });
 });
 
-// -------------------------------------------------------------STYLE MENU BURGER-----------------------------------------
+// ----------------------------------------------------------MODAL IMAGE PROJET 3----------------------------------------------------
+
+document.querySelector('#imgprojet3').addEventListener('click', function() {
+    
+    var modal = document.createElement('div');
+    modal.classList.add('modal3');
+
+    
+    modal.innerHTML = `
+        <h1>API musique</h1>
+        <span>Retrouvez vos artistes, albums et titres préférés</span>
+        <p>Avec l'API de Deezer j'ai pus crée ce site qui permet de retrouver n'importe quel artiste, album et/ou titre recensé sur Deezer. Vous pouvez retrouver jusqu'à 10 artistes, album et titre maximum. Si vous ne trouvez pas votre bonheur, affinez votre recherche !</p>
+        <button class="closeBtn">Fermer</button>
+    `;
+
+    
+    document.body.appendChild(modal);
+
+    
+    modal.querySelector('.closeBtn').addEventListener('click', function() {
+        document.body.removeChild(modal); 
+    });
+});
 
