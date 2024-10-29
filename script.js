@@ -92,6 +92,20 @@ imgProjet3.addEventListener('mouseleave', () => {
     textphoto3.style.display = 'none'
 });
 
+const imgProjet4 = document.getElementById('imgprojet4');
+const textphoto4 =document.getElementById('textphoto4')
+
+imgProjet4.addEventListener('mouseenter', () => {
+    imgProjet4.style.opacity = 0.2;
+    textphoto4.style.display = 'block'; 
+});
+
+imgProjet4.addEventListener('mouseleave', () => {
+    imgProjet4.style.opacity = 1;
+    textphoto4.style.display = 'none'
+});
+
+
 // --------------------------------------------------------MODAL IMAGE PROJET 1--------------------------------------------------------
 document.querySelector('#imgprojet1').addEventListener('click', function() {
     
@@ -162,4 +176,30 @@ document.querySelector('#imgprojet3').addEventListener('click', function() {
         document.body.removeChild(modal); 
     });
 });
+
+// ----------------------------------------------------------MODAL IMAGE PROJET 4----------------------------------------------------
+
+document.querySelector('#imgprojet4').addEventListener('click', function() {
+    
+    var modal = document.createElement('div');
+    modal.classList.add('modal4');
+
+    
+    modal.innerHTML = `
+        <h1>Site Handball Jeux Olympique</h1>
+        <span>Retrouvez tout les infos des jeux olympique d'handball</span>
+        <p>Un site complet ou vous pouvez voir les infos sur le handball, les dates des matchs, une (fausse) billeterie, une page ou vous pouvez rechercher des matchs, des équipes ou des joueurs. Vous pouvez vous inscrire, vous connectez et acceder à votre profil. Un CRUD est disponible pour les compte admin. Vous pouvez le consulter de vous même sur ce lien :</p>
+      <a href="https://dkdwwm.fr/ethan-delannoy/Projet-JO/index.php" target="_blank">https://dkdwwm.fr/ethan-delannoy/Projet-JO/index.php</a>
+        <button class="closeBtn">Fermer</button>
+    `;
+
+    
+    document.body.appendChild(modal);
+
+    
+    modal.querySelector('.closeBtn').addEventListener('click', function() {
+        document.body.removeChild(modal); 
+    });
+});
+
 

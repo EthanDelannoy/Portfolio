@@ -492,6 +492,15 @@ h2{
     background-color: #0056b3;
 }
 
+#textphoto2{
+    display: none;
+    position: absolute;
+    right: 18%;
+    top: 384%;
+    font-size: 1.5vw;
+    color: #9DE0F3;
+}
+
 #imgprojet2{
     width: 40vw;
     border: 1px solid #9DE0F3;
@@ -530,11 +539,11 @@ h2{
     background-color: #0056b3;
 }
 
-#textphoto2{
+#textphoto3{
     display: none;
     position: absolute;
-    right: 18%;
-    top: 384%;
+    top: 433%;
+    left: 18%;
     font-size: 1.5vw;
     color: #9DE0F3;
 }
@@ -578,12 +587,54 @@ h2{
     background-color: #0056b3;
 }
 
-#textphoto3{
+
+#textphoto4{
     display: none;
     position: absolute;
+    right: 13%;
     top: 433%;
     font-size: 1.5vw;
     color: #9DE0F3;
+}
+
+#imgprojet4{
+    width: 40vw;
+    border: 1px solid #9DE0F3;
+    cursor: pointer;
+}
+
+
+.modal4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #030304;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    border: 1px solid #9DE0F3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    line-height: 30px;
+
+}
+
+.closeBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #062F3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: #0056b3;
 }
 
 
@@ -940,7 +991,7 @@ footer{
        background-color: #030304; 
        color: white;
        width: 100vw;
-       height: 200vh;
+       height: 250vh;
        display: flex;
        flex-direction: column;
     
@@ -1019,6 +1070,22 @@ footer{
         top: 477vh;
         font-size: 3vw;
         color: #9DE0F3;
+    }
+
+    
+    #textphoto4{
+        display: none;
+        position: absolute;
+        left: 23%;
+        top: 525vh;
+        font-size: 3vw;
+        color: #9DE0F3;
+    }
+
+    #imgprojet4{
+        width: 75vw;
+        height: 45vh;
+        border: 1px solid #9DE0F3;
     }
 
     #contact{
@@ -1485,7 +1552,7 @@ footer{
    background-color: #030304; 
    color: white;
    width: 100vw;
-   height: 160vh;
+   height: 190vh;
    display: flex;
    flex-direction: column;
    gap: 5vh;
@@ -1663,9 +1730,57 @@ footer{
     display: none;
     position: absolute;
     left: 22%;
-    top: 523vh;
+    top: 488vh;
     font-size: 5vw;
     color: #9DE0F3;
+}
+
+#textphoto4{
+    display: none;
+    position: absolute;
+    left: 23%;
+    top: 560vh;
+    font-size: 3vw;
+    color: #9DE0F3;
+}
+
+#imgprojet4{
+    width: 85vw;
+    height: 30vh;
+    border: 1px solid #9DE0F3;
+}
+
+.modal4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #030304;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    border: 1px solid #9DE0F3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    line-height: 30px;
+    width: 80vw;
+}
+
+.closeBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #062F3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    background-color: #0056b3;
 }
 
 
@@ -2126,7 +2241,7 @@ footer{
        background-color: #030304; 
        color: white;
        width: 100%;
-       height: 150vh;
+       height: 175vh;
        display: flex;
        flex-direction: column;
     
@@ -2309,6 +2424,56 @@ footer{
         color: #9DE0F3;
         right: 0%;
     }
+
+    #textphoto4{
+        display: none;
+        position: absolute;
+        left: 18%;
+        top: 525vh;
+        font-size: 6vw;
+        color: #9DE0F3;
+        right: 0%;
+    }
+    
+    #imgprojet4{
+        width: 85vw;
+        height: 25vh;
+        border: 1px solid #9DE0F3;
+    }
+    
+    .modal4 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #030304;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        padding: 20px;
+        border: 1px solid #9DE0F3;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 90vw;
+        font-size: 14px;
+    }
+    
+    .closeBtn {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: #062F3A;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .closeBtn:hover {
+        background-color: #0056b3;
+    }
+    
     
     #contact{
         background-color: #062F3A;
