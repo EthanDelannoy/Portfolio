@@ -504,6 +504,7 @@ h2{
 #imgprojet2{
     width: 40vw;
     border: 1px solid #9DE0F3;
+    cursor: pointer;
 }
 
 .modal2 {
