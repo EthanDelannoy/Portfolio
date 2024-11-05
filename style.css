@@ -34,12 +34,12 @@ a{
 .barre {
     position: absolute;
     bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
+    left: 50%;
     width: 0;
     height: 2px;
     background-color: white;
-    transition: width 0.3s ease; 
+    transform: translateX(-50%); /* Centre la barre sous le lien */
+    transition: width 0.3s ease; /* Transition pour un effet de glissement */
 }
 
 #burgerContainer {
